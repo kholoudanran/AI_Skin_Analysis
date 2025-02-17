@@ -35,7 +35,7 @@ def load_skincare_data():
 skincare_data = load_skincare_data()
 
 # Title of the application
-st.title("🎭 Facial Analysis Application")
+st.title("🎭 Facial Analysis Application - NTI")
 
 # Sidebar for user input
 st.sidebar.title("Options")
