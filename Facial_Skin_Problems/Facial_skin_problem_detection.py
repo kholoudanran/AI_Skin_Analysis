@@ -8,7 +8,7 @@ from PIL import Image
 st.title("Facial Skin Problem Detection - NTI")
 
 # Load the trained YOLOv8 model (best.pt)
-model = YOLO("best.pt")  # Replace with the path to your best.pt file
+model = YOLO("/content/AI_Skin_Analysis/best.pt")  # Replace with the path to your best.pt file
 
 # Define the segmentation classes and their corresponding colors (in RGB format)
 classes = ['darkcircle', 'melasma', 'redness', 'vascular', 'wrinkle']
