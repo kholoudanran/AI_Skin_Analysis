@@ -11,11 +11,11 @@ import pandas as pd  # For reading the Excel file
 np.set_printoptions(suppress=True)
 
 # Load the skin type classification model
-skin_model = load_model("keras_model.h5", compile=False)
-skin_class_names = open("labels.txt", "r").readlines()
+skin_model = load_model("/content/AI_Skin_Analysis/keras_model.h5", compile=False)
+skin_class_names = open("/content/AI_Skin_Analysis/labels.txt", "r").readlines()
 
 # Load the YOLO model for facial skin problem detection
-yolo_model = YOLO("best.pt")  # Replace with the path to your best.pt file
+yolo_model = YOLO("/content/AI_Skin_Analysis/best.pt")  # Replace with the path to your best.pt file
 
 # Define the segmentation classes and their corresponding colors (in RGB format)
 classes = ['darkcircle', 'melasma', 'redness', 'vascular', 'wrinkle']
@@ -30,7 +30,7 @@ colors = {
 # Load skincare product recommendations from Excel
 @st.cache_data  # Cache the data for better performance
 def load_skincare_data():
-    return pd.read_excel("skincare_products.xlsx")  # Replace with the path to your Excel file
+    return pd.read_excel("/content/AI_Skin_Analysis/skincare_products.xlsx")  # Replace with the path to your Excel file
 
 skincare_data = load_skincare_data()
 
