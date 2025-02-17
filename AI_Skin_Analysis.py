@@ -213,4 +213,4 @@ elif option == "Use Webcam":
 
 st.markdown("---")
 st.markdown("This application combines skin type classification, face age, and facial skin problem detection.")
-st.markdown("🌐 Developed by [Kholoud Khaled.]")
+st.markdown("🌐 Developed by [Kholoud Khaled.] (https://github.com/kholoudanran/AI_Skin_Analysis.git)")
